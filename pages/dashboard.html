@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Wagner Oliveira</title>
+    <link rel="stylesheet" href="/TCC-WAGNER/CSS/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+
+            <div class="logo-container">
+                <a href="/TCC-WAGNER/index.html" class="logo-link">
+                    <img src="../PNG/LOGO.png" alt="Wagner Oliveira Logo" class="logo-icon">
+                </a>
+            </div>
+        </div>
+        
+        <nav class="nav-menu">
+            <a href="#" class="nav-item active"><i class="fa-solid fa-chart-line"></i></a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-box-archive"></i></a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-scissors"></i></a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-user-group"></i></a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-wallet"></i></a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        
+        <header class="main-header">
+            <div class="welcome-box">
+                <h2>Bem-vindo, Wagner!</h2>
+                <p>Aqui está o que está acontecendo no seu ateliê hoje.</p>
+            </div>
+            <button class="btn-budget"><span class="plus">+</span> Novo Orçamento</button>
+        </header>
+
+        <section class="kpi-grid">
+            <div class="kpi-card">
+                <h3>TOTAL EM ESTOQUE</h3>
+                <div class="kpi-value">4.850 <span class="kpi-unit gold">g</span></div>
+            </div>
+            <div class="kpi-card">
+                <h3>VENDAS (MÊS)</h3>
+                <div class="kpi-value">38.700 <span class="kpi-unit gold">R$</span></div>
+            </div>
+            <div class="kpi-card">
+                <h3>EM PRODUÇÃO</h3>
+                <div class="kpi-value">10 <span class="kpi-unit gold-text">Peças</span></div>
+            </div>
+            <div class="kpi-card">
+                <h3>PENDENTES ZAP</h3>
+                <div class="kpi-value">07</div>
+            </div>
+        </section>
+
+        <section class="dashboard-details">
+            
+            <div class="details-card table-container">
+                <h3>Peças em confecção</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>CLIENTE</th>
+                            <th>SERVIÇO</th>
+                            <th>PESO</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ana Silva</td>
+                            <td>Tecer Telas + Pintura</td>
+                            <td class="weight-cell">180g</td>
+                            <td><span class="status-badge status-pintura">Pintura</span></td>
+                        </tr>
+                        <tr>
+                            <td>Carla Souza</td>
+                            <td>Manutenção</td>
+                            <td class="weight-cell">180g</td>
+                            <td><span class="status-badge status-costura">Costura</span></td>
+                        </tr>
+                        <tr>
+                            <td>Beatriz Oliveira</td>
+                            <td>Confecção de Topo</td>
+                            <td class="weight-cell">180g</td>
+                            <td><span class="status-badge status-finalizacao">Finalização</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="details-card alerts-container">
+                <h3>Alertas de Estoque</h3>
+                
+                <div class="alert-item">
+                    <div class="alert-info">
+                        <h4>Loiro Platinado 60cm</h4>
+                        <span class="alert-qty alert-critical">45g</span>
+                    </div>
+                    <span class="dot dot-critical"></span>
+                </div>
+
+                <div class="alert-item">
+                    <div class="alert-info">
+                        <h4>Castanho Médio 50cm</h4>
+                        <span class="alert-qty alert-warning">120g</span>
+                    </div>
+                    <span class="dot dot-warning"></span>
+                </div>
+
+                <a href="#" class="view-inventory">Ver Inventário Completo <i class="fa-solid fa-angles-down"></i></a>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar - Wagner Oliveira Mega Hair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/personalizar.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../PNG/LOGO.png" alt="Wagner Oliveira Logo" class="brand-logo-img">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="../index.html">INÍCIO</a>
+                <a href="sobre.html">SOBRE</a>
+                <a href="catalogo.html">CATÁLOGO</a>
+                <a href="personalizar.html" class="active">PERSONALIZAR</a>
+                <a href="contato.html">CONTATO</a>
+                 <a href="perfil.html">PERFIL</a>
+            </nav>
+            <div class="header-actions">
+
+                <button title="Carrinho"><i class="bi bi-cart"></i></button>
+                <a href="login.html" title="Entrar" style="display:flex;align-items:center;color:#a3a3a3;background:none;border:none;cursor:pointer;">
+                    <i class="bi bi-person" style="font-size:1.2rem;"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding: 60px 25px 80px; max-width: 1200px; margin: 0 auto;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px;">
+
+            <!-- Preview -->
+            <section style="background:#111; padding:30px; border:1px solid #262626; border-radius:8px; text-align:center;">
+                <h2 class="section-title" style="font-size:1.8rem; margin-bottom:10px;">SEU PRODUTO</h2>
+                <div class="title-underline" style="margin-bottom:25px;"></div>
+                <div id="custom-product-image" style="width:100%; max-width:320px; height:320px; margin:0 auto 20px; overflow:hidden; border-radius:4px; border:1px solid #262626; display:flex; align-items:center; justify-content:center; color:#666;">
+                    <i class="bi bi-image" style="font-size:3rem;"></i>
+                </div>
+                <h3 id="custom-product-name" style="font-family:'Playfair Display',serif; color:#fff; font-size:1.5rem; margin-bottom:15px;">Nenhum item selecionado</h3>
+                <div style="background:#1a1a1a; padding:20px; border-radius:4px; text-align:left; border-left:3px solid #bfa15f;">
+                    <h4 style="color:#bfa15f; font-size:0.85rem; margin-bottom:12px; letter-spacing:1px;">CONFIGURAÇÃO DO SEU MEGA HAIR:</h4>
+                    <p style="margin:6px 0; font-size:0.92rem;"><strong>Cor:</strong> <span id="resumo-cor" style="color:#bfa15f;">Padrão</span></p>
+                    <p style="margin:6px 0; font-size:0.92rem;"><strong>Comprimento:</strong> <span id="resumo-comprimento" style="color:#bfa15f;">Padrão</span></p>
+                    <p style="margin:6px 0; font-size:0.92rem;"><strong>Textura:</strong> <span id="resumo-textura" style="color:#bfa15f;">Padrão</span></p>
+                    <p style="margin:6px 0; font-size:0.92rem;"><strong>Espessura:</strong> <span id="resumo-espessura" style="color:#bfa15f;">Padrão</span></p>
+                </div>
+            </section>
+
+            <!-- Opções -->
+            <section style="background:#111; padding:30px; border:1px solid #262626; border-radius:8px;">
+                <h2 class="section-title" style="font-size:1.8rem; margin-bottom:10px; text-align:left;">ALTERAR ESPECIFICAÇÕES</h2>
+                <div class="title-underline" style="margin-left:0; margin-bottom:25px;"></div>
+
+                <div style="margin-bottom:22px;">
+                    <label style="color:#bfa15f; font-weight:700; margin-bottom:8px; display:block; font-size:0.82rem; letter-spacing:1px;">1. COR DO CABELO</label>
+                    <select id="change-cor" onchange="atualizarEspecificacoesDaPagina()" style="width:100%; padding:12px; background:#1a1a1a; border:1px solid #262626; color:#fff; border-radius:4px; outline:none; font-family:'Lato',sans-serif;">
+                        <option value="Loiro Mel">Loiro Mel</option>
+                        <option value="Castanho Escuro">Castanho Escuro</option>
+                        <option value="Loiro Platinado">Loiro Platinado</option>
+                        <option value="Preto Natural">Preto Natural</option>
+                        <option value="Castanho Médio">Castanho Médio</option>
+                        <option value="Loiro Claro">Loiro Claro</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom:22px;">
+                    <label style="color:#bfa15f; font-weight:700; margin-bottom:8px; display:block; font-size:0.82rem; letter-spacing:1px;">2. COMPRIMENTO</label>
+                    <select id="change-comprimento" onchange="atualizarEspecificacoesDaPagina()" style="width:100%; padding:12px; background:#1a1a1a; border:1px solid #262626; color:#fff; border-radius:4px; outline:none; font-family:'Lato',sans-serif;">
+                        <option value="50 cm">50 cm</option>
+                        <option value="55 cm">55 cm</option>
+                        <option value="60 cm">60 cm</option>
+                        <option value="65 cm">65 cm</option>
+                        <option value="70 cm">70 cm</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom:22px;">
+                    <label style="color:#bfa15f; font-weight:700; margin-bottom:8px; display:block; font-size:0.82rem; letter-spacing:1px;">3. TEXTURA DO FIO</label>
+                    <select id="change-textura" onchange="atualizarEspecificacoesDaPagina()" style="width:100%; padding:12px; background:#1a1a1a; border:1px solid #262626; color:#fff; border-radius:4px; outline:none; font-family:'Lato',sans-serif;">
+                        <option value="Liso Natural">Liso Natural</option>
+                        <option value="Ondulado">Ondulado</option>
+                        <option value="Cacheado">Cacheado</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom:22px;">
+                    <label style="color:#bfa15f; font-weight:700; margin-bottom:8px; display:block; font-size:0.82rem; letter-spacing:1px;">4. ESPESSURA DO FIO</label>
+                    <select id="change-espessura" onchange="atualizarEspecificacoesDaPagina()" style="width:100%; padding:12px; background:#1a1a1a; border:1px solid #262626; color:#fff; border-radius:4px; outline:none; font-family:'Lato',sans-serif;">
+                        <option value="Fio Fino">Fio Fino (Ideal para preenchimento sutil)</option>
+                        <option value="Fio Médio">Fio Médio (Padrão adaptável premium)</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom:30px;">
+                    <label style="color:#bfa15f; font-weight:700; margin-bottom:8px; display:block; font-size:0.82rem; letter-spacing:1px;">5. ESPECIFICAÇÕES ADICIONAIS</label>
+                    <textarea id="change-adicionais" placeholder="Ex: Desejo pontas mais cheias, mesclagem sutil com mechas escuras..." rows="4" style="width:100%; padding:12px; background:#1a1a1a; border:1px solid #262626; color:#fff; border-radius:4px; outline:none; resize:none; font-family:'Lato',sans-serif; box-sizing:border-box;"></textarea>
+                </div>
+
+                <button class="btn-gold" onclick="salvarEAvancar()" style="width:100%; padding:15px; font-size:1rem;">SALVAR NO CARRINHO ▶</button>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col-brand">
+                <div class="footer-logo">
+                    <img src="../PNG/LOGO.png" alt="Wagner Oliveira Logo" class="brand-logo-img">
+                </div>
+                <p class="brand-footer-text">Excelência em Mega Hair com fios selecionados e um atendimento exclusivo</p>
+            </div>
+            <div class="footer-col">
+                <h4>MENU</h4>
+                <a href="../index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="catalogo.html">Catálogo</a>
+                <a href="personalizar.html">Personalizar</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="footer-col">
+                <h4>INFORMAÇÕES</h4>
+                <a href="#">Perguntas Frequentes</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Trocas e Devoluções</a>
+                <a href="#">Termo de Uso</a>
+            </div>
+            <div class="footer-col">
+                <h4>ATENDIMENTO</h4>
+                <a href="#">💬 Fale no WhatsApp</a>
+                <a href="#">🗓️ Agende sua avaliação</a>
+                <a href="#">📸 @wagneroliveira.hair</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Wagner Oliveira Mega Hair. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+</body>
+</html>

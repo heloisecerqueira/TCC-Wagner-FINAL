@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Wagner Oliveira Mega Hair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+
+    <div class="login-wrapper">
+
+        <div class="login-card" id="card-login">
+            <img src="../PNG/LOGO.png" alt="Wagner Oliveira Logo" class="login-logo">
+
+            <form id="form-efetuar-login">
+                <div class="form-group">
+                    <label>Usuário / E-mail</label>
+                    <input type="email" placeholder="user.sobre@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Senha</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+
+                <a href="#" class="forgot-link" id="link-ir-cadastro" style="color:#bfa15f; font-weight:700;">Não tem conta? Crie aqui</a>
+                <a href="#" class="forgot-link">Esqueceu sua senha?</a>
+
+                <button type="submit" class="btn-login">Entrar no Atelier</button>
+                <p class="footer-text">Secure Access</p>
+            </form>
+        </div>
+
+        <div class="login-card" id="card-cadastro" style="display:none;">
+            <img src="../PNG/LOGO.png" alt="Wagner Oliveira Logo" class="login-logo">
+            <p class="brand-tagline" style="margin-top: 10px;">Criar Nova Conta</p>
+
+            <form id="form-criar-cadastro">
+                <div class="form-group">
+                    <label>Nome Completo</label>
+                    <input type="text" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="seuemail@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefone / WhatsApp</label>
+                    <input type="tel" placeholder="(11) 99999-9999" required>
+                </div>
+                <div class="form-group">
+                    <label>Criar Senha</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+
+        
+                <button type="submit" class="btn-login">Finalizar Cadastro</button>
+                <a href="#" class="back-to-login" id="link-voltar-login">← Voltar para o Login</a>
+                <p class="footer-text">Secure Access</p>
+            </form>
+            <nav class="nav-menu"></nav>
+                <a href="index.html" class="active">INÍCIO</a>
+            </nav>
+        </div>
+
+    </div>
+
+    <script src="../JS/main.js"></script>
+</body>
+</html>

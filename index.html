@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wagner Oliveira Mega Hair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="dashboard.html">
+                    <img src="PNG/LOGO.png" alt="Wagner Oliveira Logo" class="brand-logo-img">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="active">INÍCIO</a>
+                <a href="pages/sobre.html">SOBRE</a>
+                <a href="pages/catalogo.html">CATÁLOGO</a>
+                <a href="pages/personalizar.html">PERSONALIZAR</a>
+                <a href="pages/contato.html">CONTATO</a>
+                 <a href="pages/perfil.html">PERFIL</a>
+            </nav>
+            <div class="header-actions">
+                <button title="Carrinho"><i class="bi bi-cart"></i></button>
+                <div class="user-auth-wrapper">
+                    <a href="pages/login.html" id="btn-login-header" title="Entrar" style="display:flex;align-items:center;color:#a3a3a3;">
+                        <i class="bi bi-person" style="font-size:1.2rem;"></i>
+                    </a>
+                    <div id="perfil-usuario" class="user-profile-box" style="display:none;">
+                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Foto de Perfil" id="foto-usuario">
+                        <span id="nome-usuario">Cliente</span>
+                        <button id="btn-logout" class="btn-logout" title="Sair">
+                            <i class="bi bi-box-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="brand-subtitle">WAGNER OLIVEIRA</p>
+                <h1 class="hero-title">SEU MEGA HAIR<br>DO SEU JEITO</h1>
+                <p class="hero-description">Fios premium, 100% naturais e personalizados exclusivamente para realçar sua beleza</p>
+                <button class="btn-gold" onclick="window.location.href='pages/catalogo.html'">ESCOLHER CABELO <span>▶</span></button>
+            </div>
+            <div class="hero-image-side">
+                <img src="PNG/FOTO 1.avif" alt="Textura de Mega Hair Premium Wagner Oliveira">
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-section">
+        <div class="benefits-container">
+            <div class="benefit-item">
+                <div class="icon-circle"><i class="bi bi-flower1"></i></div>
+                <h3>100% NATURAL</h3>
+                <p>Fios selecionados</p>
+            </div>
+            <div class="benefit-item">
+                <div class="icon-circle"><i class="bi bi-sliders"></i></div>
+                <h3>PERSONALIZADO</h3>
+                <p>Do seu jeito</p>
+            </div>
+            <div class="benefit-item">
+                <div class="icon-circle"><i class="bi bi-scissors"></i></div>
+                <h3>PRODUÇÃO ARTESANAL</h3>
+                <p>Feito com perfeição</p>
+            </div>
+            <div class="benefit-item">
+                <div class="icon-circle"><i class="bi bi-award"></i></div>
+                <h3>ATENDIMENTO PREMIUM</h3>
+                <p>Exclusivo para você</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+        <div class="catalog-container">
+            <h2 class="section-title">DESTAQUES EM ESTOQUE</h2>
+            <div class="title-underline"></div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="PNG/catalogoloiromel.webp" alt="Loiro Mel">
+                    <h3>Loiro Mel</h3>
+                    <p>Cabelo de alta qualidade, fios selecionados, perfeito para alongamento e volume.</p>
+                    <span class="price">A partir de R$ 350,00</span>
+                    <button class="btn-card" onclick="window.location.href='pages/catalogo.html'">VER CATÁLOGO</button>
+                </div>
+                <div class="product-card">
+                    <img src="PNG/catalogocastanhoescuro.webp" alt="Castanho Escuro">
+                    <h3>Castanho Escuro</h3>
+                    <p>Cabelo de alta qualidade, fios selecionados, perfeito para alongamento e volume.</p>
+                    <span class="price">A partir de R$ 350,00</span>
+                    <button class="btn-card" onclick="window.location.href='pages/catalogo.html'">VER CATÁLOGO</button>
+                </div>
+                <div class="product-card">
+                    <img src="PNG/catalogoloiroplatinado.webp" alt="Loiro Platinado">
+                    <h3>Loiro Platinado</h3>
+                    <p>Cabelo de alta qualidade, fios selecionados, perfeito para alongamento e volume.</p>
+                    <span class="price">A partir de R$ 350,00</span>
+                    <button class="btn-card" onclick="window.location.href='pages/catalogo.html'">VER CATÁLOGO</button>
+                </div>
+                <div class="product-card">
+                    <img src="PNG/catalogopreto.jpg" alt="Preto Natural">
+                    <h3>Preto Natural</h3>
+                    <p>Cabelo de alta qualidade, fios selecionados, perfeito para alongamento e volume.</p>
+                    <span class="price">A partir de R$ 350,00</span>
+                    <button class="btn-card" onclick="window.location.href='pages/catalogo.html'">VER CATÁLOGO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="cta-container">
+            <h2>Pronto para transformar sua beleza?</h2>
+            <p>Escolha seu mega hair perfeito e receba em casa com atendimento exclusivo</p>
+            <button class="btn-outline-gold" onclick="window.location.href='pages/catalogo.html'">EXPLORAR CATÁLOGO COMPLETO</button>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col-brand">
+                <div class="footer-logo">
+                    <img src="PNG/LOGO.png" alt="Wagner Oliveira Logo" class="brand-logo-img">
+                </div>
+                <p class="brand-footer-text">Excelência em Mega Hair com fios selecionados e um atendimento exclusivo</p>
+            </div>
+            <div class="footer-col">
+                <h4>MENU</h4>
+                <a href="index.html">Início</a>
+                <a href="pages/sobre.html">Sobre</a>
+                <a href="pages/catalogo.html">Catálogo</a>
+                <a href="pages/personalizar.html">Personalizar</a>
+                <a href="pages/contato.html">Contato</a>
+                <a href="pages/login.html">Login</a>
+            </div>
+            <div class="footer-col">
+                <h4>INFORMAÇÕES</h4>
+                <a href="#">Perguntas Frequentes</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Trocas e Devoluções</a>
+                <a href="#">Termo de Uso</a>
+            </div>
+            <div class="footer-col">
+                <h4>ATENDIMENTO</h4>
+                <a href="#">💬 Fale no WhatsApp</a>
+                <a href="#">🗓️ Agende sua avaliação</a>
+                <a href="#">📸 @wagneroliveira.hair</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Wagner Oliveira Mega Hair. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
