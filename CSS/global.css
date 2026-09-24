@@ -54,8 +54,6 @@ img {
 
 /* =====================================================
    LOGO DA NAV-BAR
-   Para aumentar a logo, altere o "height" abaixo.
-   Atual: 50px — aumente para 60px, 70px, etc.
    ===================================================== */
 .logo .brand-logo-img,
 .logo a img {
@@ -69,14 +67,17 @@ img {
     margin-bottom: 10px;
 }
 
+/* =====================================================
+   MENU PRINCIPAL
+   ===================================================== */
 .nav-menu {
     display: flex;
-    gap: 25px;
+    gap: 32px;
     align-items: center;
 }
 
 .nav-menu a {
-    font-size: 0.82rem;
+    font-size: 0.88rem;
     font-weight: 700;
     letter-spacing: 1.2px;
     color: #a3a3a3;
@@ -90,11 +91,15 @@ img {
     color: #bfa15f;
 }
 
+/* =====================================================
+   AÇÕES DO HEADER — CARRINHO E PERFIL
+   ===================================================== */
 .header-actions {
     display: flex;
-    gap: 12px;
+    gap: 18px;
     align-items: center;
     flex-shrink: 0;
+    margin-left: 12px;
 }
 
 .header-actions button,
@@ -102,9 +107,9 @@ img {
     background: none;
     border: none;
     color: #a3a3a3;
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     cursor: pointer;
-    padding: 4px;
+    padding: 5px;
     line-height: 1;
     transition: color 0.3s;
     display: flex;
@@ -128,8 +133,8 @@ img {
 }
 
 .user-profile-box img {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -265,7 +270,9 @@ img {
     transition: color 0.3s;
 }
 
-.footer-col a:hover { color: #bfa15f; }
+.footer-col a:hover {
+    color: #bfa15f;
+}
 
 .footer-bottom {
     max-width: 1200px;
@@ -281,8 +288,18 @@ img {
    RESPONSIVIDADE
    ===================================================== */
 @media (max-width: 900px) {
-    .nav-menu { gap: 14px; }
-    .nav-menu a { font-size: 0.76rem; }
+    .nav-menu {
+        gap: 18px;
+    }
+
+    .nav-menu a {
+        font-size: 0.80rem;
+    }
+
+    .header-actions {
+        gap: 14px;
+        margin-left: 8px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -291,12 +308,14 @@ img {
         justify-content: center;
         gap: 12px;
     }
+
     .nav-menu {
         flex-wrap: wrap;
         justify-content: center;
         order: 3;
         width: 100%;
     }
+
     .footer-container {
         flex-direction: column;
         gap: 28px;
