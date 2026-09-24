@@ -8,7 +8,7 @@ const listaCabelosCatalogo = [
     { nome: "Castanho Escuro", imagem: "../PNG/catalogocastanhoescuro.webp"},
     { nome: "Loiro Platinado", imagem: "../PNG/catalogoloiroplatinado.webp" },
     { nome: "Preto Natural", imagem: "../PNG/catalogopreto.jpg" },
-    { nome: "Castanho Médio", imagem: "../PNG/catalogocastamhomedio (1).webp" },
+    { nome: "Castanho Médio", imagem: "../PNG/catalogocastanhoescuro.webp" },
     { nome: "Loiro Claro", imagem: "../PNG/catalogoloiroclaro.webp" }
 ];
 
@@ -49,6 +49,15 @@ function atualizarEspecificacoesDaPagina() {
         document.getElementById("resumo-cor").innerText = campoCor.value;
         if(document.getElementById("custom-product-name")) {
             document.getElementById("custom-product-name").innerText = campoCor.value + " Premium";
+        }
+
+        // Atualiza a foto do produto de acordo com a cor escolhida
+        const containerImagem = document.getElementById("custom-product-image");
+        if (containerImagem) {
+            const cabeloEncontrado = listaCabelosCatalogo.find(c => c.nome === campoCor.value);
+            if (cabeloEncontrado) {
+                containerImagem.innerHTML = `<img src="${cabeloEncontrado.imagem}" alt="${cabeloEncontrado.nome}" style="width:100%; height:100%; object-fit:cover;">`;
+            }
         }
     }
     if (campoComprimento && document.getElementById("resumo-comprimento")) {
