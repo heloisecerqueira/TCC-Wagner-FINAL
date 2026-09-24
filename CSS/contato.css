@@ -7,7 +7,6 @@
 .pagina-contato-exclusiva {
     padding-top: 140px;
     padding-bottom: 80px;
-    background-color: #0b0b0b;
 }
 
 .pagina-contato-exclusiva .contato-grid {
@@ -61,7 +60,13 @@
 .pagina-contato-exclusiva .contato-info-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 32px;
+}
+
+.pagina-contato-exclusiva .info-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .pagina-contato-exclusiva .info-detalhes p {
@@ -71,6 +76,11 @@
     color: #a3a3a3;
     margin-bottom: 12px;
     font-size: 0.95rem;
+}
+
+/* Espaçamento entre os blocos de informações */
+.pagina-contato-exclusiva .info-detalhes p + p {
+    margin-top: 8px;
 }
 
 .pagina-contato-exclusiva .info-detalhes p i {
