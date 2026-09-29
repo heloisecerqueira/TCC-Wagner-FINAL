@@ -231,7 +231,7 @@ function atualizarConteudoDoCarrinho() {
             </div>
 
             <div style="margin-top: auto; padding-top: 20px;">
-                <a href="https://wa.me/5511999998888?text=${mensagemZap}" target="_blank" class="btn-gold" style="display: block; text-align: center; font-size: 0.9rem; padding: 14px; text-decoration: none; box-sizing: border-box; font-weight: bold;">
+                <a href="https://wa.me/5571982256889?text=${mensagemZap}" target="_blank" class="btn-gold" style="display: block; text-align: center; font-size: 0.9rem; padding: 14px; text-decoration: none; box-sizing: border-box; font-weight: bold;">
                     PROSSEGUIR PARA COMPRAR <span>▶</span>
                 </a>
             </div>
