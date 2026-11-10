@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Profissional | Wagner Oliveira Mega Hair</title>
+  <link rel="stylesheet" href="../CSS/painel-wagner.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="marca">
+      <img src="../PNG/LOGO.png" alt="Wagner Oliveira Mega Hair" class="logo-img">
+      <div class="marca-texto">
+        <strong>WAGNER OLIVEIRA</strong>
+        <small>ESPECIALISTA EM MEGA HAIR</small>
+      </div>
+    </div>
+
+<nav>
+  <button class="nav-btn ativo" data-pagina="perfil">Perfil</button>
+  <button class="nav-btn" data-pagina="inventario">Inventário</button>
+  <button class="nav-btn" data-pagina="producao">Produção</button>
+  <button class="nav-btn" data-pagina="notificacoes">Notificações <span id="contador">2</span></button>
+</nav>
+
+  </header>
+
+  <main class="container">
+    <div class="titulo">
+      <div>
+        <p class="sobretitulo">WAGNER OLIVEIRA</p>
+        <h1 id="titulo-pagina">Perfil Profissional</h1>
+        <p id="descricao-pagina">Seus dados e visão geral do ateliê</p>
+      </div>
+      <button id="novo-item" class="botao" hidden>+ Novo produto</button>
+    </div>
+
+<section id="conteudo"></section>
+
+  </main>
+
+  <div id="modal-fundo" class="modal-fundo" hidden>
+    <form id="form-item" class="modal">
+      <h2 id="modal-titulo">Novo produto</h2>
+
+  <label for="nome-item">Nome</label>
+  <input id="nome-item" required>
+
+  <label for="sku-item">Código SKU</label>
+  <input id="sku-item" required>
+
+  <div class="duas-colunas">
+    <div>
+      <label for="quantidade-item">Quantidade</label>
+      <input id="quantidade-item" type="number" min="0" required>
+    </div>
+    <div>
+      <label for="minimo-item">Estoque mínimo</label>
+      <input id="minimo-item" type="number" min="0" required>
+    </div>
+  </div>
+
+  <div class="duas-colunas">
+    <div>
+      <label for="preco-item">Preço/custo (R$)</label>
+      <input id="preco-item" type="number" min="0" step="0.01" required>
+    </div>
+    <div>
+      <label for="categoria-item">Categoria</label>
+      <select id="categoria-item">
+        <option>Produto</option>
+        <option>Insumo</option>
+        <option>Maquinário</option>
+        <option>Em Produção</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="acoes">
+    <button type="button" id="cancelar-modal" class="botao secundario">Cancelar</button>
+    <button class="botao" type="submit">Salvar</button>
+  </div>
+</form>
+
+  </div>
+
+  <div id="mensagem" class="mensagem" role="status"></div>
+
+  <script src="../JS/painel-wagner.js"></script>
+
+</body>
+</html>
